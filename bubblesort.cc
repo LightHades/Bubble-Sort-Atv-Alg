@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void bubbleSort(int arr[], int n)
-{
+void bubbleSort(int arr[], int n) {
 	int i, j;
 	for (i = 0; i < n - 1; i++)
 
@@ -11,20 +10,19 @@ void bubbleSort(int arr[], int n)
 				swap(arr[j], arr[j + 1]);
 }
 
-void printArray(int arr[], int size)
-{
+void printArray(int arr[], int size) {
 	int i;
 	for (i = 0; i < size; i++)
 		cout << arr[i] << " ";
 	cout << endl;
 }
 
-int main()
-{
+int main() {
 	int arr[] = {9, 21, 7, 38, 6,42 ,3 , 5, 18};
 	int N = sizeof(arr) / sizeof(arr[0]);
 	bubbleSort(arr, N);
 	cout << "Sorted array: \n";
 	printArray(arr, N);
+
 	return 0;
 }
